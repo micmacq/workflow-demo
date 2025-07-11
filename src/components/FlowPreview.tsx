@@ -59,7 +59,7 @@ const FlowPreview = ({initialNodes = initialNodes2, initialEdges = initialEdges2
   const [edges, , onEdgesChange] = useEdgesState(initialEdges);
 
   return (
-    <div className='flow-preview' style={{height: 500}}>
+    <div className='flow-preview' style={{height: 300}}>
       <ReactFlow
         nodes={nodes}
         edges={edges}

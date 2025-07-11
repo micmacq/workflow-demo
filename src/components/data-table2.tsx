@@ -382,7 +382,7 @@ export function DataTable({
                 })}
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="outline" size="sm" onClick={()=>navTo("/flow_new")}>
+          <Button variant="outline" size="sm" onClick={()=>navTo("/workflow-demo/flow_new")}>
             <IconPlus />
             <span className="hidden lg:inline">创建流程</span>
           </Button>

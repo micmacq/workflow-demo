@@ -4,9 +4,9 @@ import { useEffect, useState } from "react"
 import Flow from "./Flow"
 
 const routes = {
-    "/": Project,
-    '/flow': FlowManager,
-    "/flow_new": Flow
+    "/workflow-demo": Project,
+    '/workflow-demo/flow': FlowManager,
+    "/workflow-demo/flow_new": Flow
 }
 
 export default function Router() {

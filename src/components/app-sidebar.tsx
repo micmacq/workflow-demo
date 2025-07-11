@@ -24,6 +24,8 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import Logo from "./logo"
+import { ThemeToggle } from "./themeToggle"
 
 // This is sample data.
 const data = {
@@ -35,7 +37,7 @@ const data = {
   teams: [
     {
       name: "浩力森化学科技有限公司",
-      logo: GalleryVerticalEnd,
+      logo: Logo,
       plan: "Enterprise",
     },
     // {
@@ -127,12 +129,12 @@ const data = {
   projects: [
     {
       name: "项目管理",
-      url: "/",
+      url: "/workflow-demo",
       icon: FileBarChart2,
     },
     {
       name: "流程管理",
-      url: "/flow",
+      url: "/workflow-demo/flow",
       icon: PieChart,
     },
     {
