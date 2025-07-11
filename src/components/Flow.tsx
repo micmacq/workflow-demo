@@ -13,8 +13,6 @@ import {
   getConnectedEdges,
   useStoreApi,
 } from '@xyflow/react';
-import { Button, Modal } from 'antd';
-import EdgesFlow from './preview/EdgesFlow';
 
 import '@xyflow/react/dist/style.css';
 
@@ -246,23 +244,6 @@ const DnDFlow = () => {
         </ReactFlow>
       </div>
       <Sidebar />
-      <Modal
-        title=""
-        closable={{ 'aria-label': 'Custom Close Button' }}
-        open={false}
-        onOk={() => {}}
-        onCancel={() => {}}
-        hideCancel={true}
-      >
-        111
-      </Modal>
-      <Button
-        type="primary"
-        style={{ position: 'fixed', right: 10, top: 2 }}
-        onClick={() => preview()}
-      >
-        预览流程
-      </Button>
     </div>
   );
 };
