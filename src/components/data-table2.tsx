@@ -174,30 +174,46 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
     accessorKey: "header",
     header: "流程名称",
     cell: ({ row }) => {
-      return <TableCellViewer item={row.original} />
+      return <div>{row.original.header}</div>
     },
     enableHiding: false,
   },
-  // {
-  //   accessorKey: "type",
-  //   header: "字段1",
-  //   cell: ({ row }) => (
-  //     <div className="w-32">
-  //       <Badge variant="outline" className="text-muted-foreground px-1.5">
-  //         {row.original.type}
-  //       </Badge>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   accessorKey: "target",
-  //   header: () => <div className="w-full">字段2</div>,
-  //   cell: ({ row }) => (
-  //   <div className="w-32">
-  //       {row.original.target}
-  //     </div>
-  //   ),
-  // },
+  {
+    accessorKey: "type",
+    header: ()=>null,
+    cell: ({ row }) => (
+      <div className="w-32">
+        
+      </div>
+    ),
+  },
+  {
+    accessorKey: "type",
+    header: ()=>null,
+    cell: ({ row }) => (
+      <div className="w-32">
+        
+      </div>
+    ),
+  },
+  {
+    accessorKey: "type",
+    header: ()=>null,
+    cell: ({ row }) => (
+      <div className="w-32">
+        
+      </div>
+    ),
+  },
+  {
+    accessorKey: "type",
+    header: ()=>null,
+    cell: ({ row }) => (
+      <div className="w-32">
+        
+      </div>
+    ),
+  },
   {
     id: "actions",
     cell: () => (
